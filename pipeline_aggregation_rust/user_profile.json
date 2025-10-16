@@ -1,0 +1,27 @@
+{
+  "user": {
+    "name": "سورنا رضاییان",
+    "email": "swrn.rdyyn@example.com",
+    "gender": "male",
+    "location": "کرج, Iran",
+    "picture": "https://randomuser.me/api/portraits/men/95.jpg"
+  },
+  "phone_number": "+33 7 84 88 43 48",
+  "iban": "FR7704610064862C63332746275",
+  "credit_card": {
+    "card_number": "4352797207149110",
+    "card_type": "Visa",
+    "expiration_date": "12/2027",
+    "cvv": "115"
+  },
+  "random_name": "Federico",
+  "pet": "Willa Chopsuey",
+  "quote": {
+    "content": "The man who does not value himself, cannot value anything or anyone.",
+    "author": "Ayn Rand"
+  },
+  "joke": {
+    "type": "Programming",
+    "content": "Have a great weekend!\nI hope your code behaves the same on Monday as it did on Friday."
+  }
+}
