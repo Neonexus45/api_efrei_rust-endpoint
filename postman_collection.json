@@ -1,0 +1,74 @@
+{
+  "info": {
+    "name": "API Aggregated Data - Dark Data Pipeline",
+    "description": "Collection pour tester l'ingestion de données du pipeline Rust avec calcul des dark data",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Pipeline Rust",
+      "item": [
+        {
+          "name": "Trigger Pipeline (Run le programme rust)",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/aggregated/trigger-pipeline",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["api", "aggregated", "trigger-pipeline"]
+            },
+            "description": "Lance le pipeline Rust (cargo run) pour générer des données et les ingérer automatiquement via POST /api/aggregated/ingest"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Aggregated Data - CRUD",
+      "item": [
+        {
+          "name": "Get All Aggregated Data",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/aggregated",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["api", "aggregated"]
+            },
+            "description": "Liste tous les documents avec dark data calculés"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Aggregated Data by ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/aggregated/:id",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["api", "aggregated", ":id"],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": "67508fc8a1b2c3d4e5f67890",
+                  "description": "Remplacez par l'ID MongoDB retourné lors de l'ingestion"
+                }
+              ]
+            },
+            "description": "Récupère un document spécifique par son ID MongoDB"
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}

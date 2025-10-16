@@ -1,5 +1,5 @@
-import Users from './users.mjs';
+import Aggregated from './aggregated.mjs';
 
 export default {
-  Users
+  Aggregated
 };

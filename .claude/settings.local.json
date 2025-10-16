@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install:*)",
+      "Bash(del /Q \"C:\\Users\\ethan\\WebstormProjects\\api\\src\\controllers\\users.mjs\")",
+      "Bash(del /Q \"C:\\Users\\ethan\\WebstormProjects\\api\\src\\models\\user.mjs\")"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
